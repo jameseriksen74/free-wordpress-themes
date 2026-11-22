@@ -1,0 +1,80 @@
+/*
+Theme Name: Zapline
+Theme URI: https://github.com/jameseriksen74/free-wordpress-themes/tree/main/zapline
+Author: Pretty Things Online
+Author URI: https://prettythingsonline.com
+Description: Zapline is a free block theme from Pretty Things Online. A loud, high-contrast theme with electric lime on black, oversized uppercase type and hard-edged buttons. It comes with three colour styles, bundled fonts, ready-made patterns for a home page, about page and newsletter, and templates for posts, pages, archives, search and 404. Great for creators, bands, streetwear labels, gaming, tech launches and agencies.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: zapline
+Tags: blog, portfolio, one-column, grid-layout, wide-blocks, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, style-variations, template-editing, threaded-comments, translation-ready
+
+Zapline WordPress Theme, (C) 2026 Pretty Things Online.
+Zapline is distributed under the terms of the GNU GPL.
+*/
+
+/* Accessibility */
+.screen-reader-text { border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; word-wrap: normal !important; }
+:where(a, button, input, select, textarea, summary):focus-visible { outline: 2px solid var(--wp--preset--color--secondary); outline-offset: 3px; }
+
+/* Layout helpers */
+.zapline-header { padding-top: var(--wp--preset--spacing--40); padding-bottom: var(--wp--preset--spacing--40); border-bottom: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 12%, transparent); }
+.zapline-main { padding-top: var(--wp--preset--spacing--60); padding-bottom: var(--wp--preset--spacing--70); }
+.zapline-main--flush { padding-top: 0; }
+.zapline-section { padding-top: var(--wp--preset--spacing--60); padding-bottom: var(--wp--preset--spacing--60); }
+.zapline-section + .zapline-section { padding-top: 0; }
+.zapline-main--flush > .zapline-section:first-child { padding-top: var(--wp--preset--spacing--40); }
+.zapline-footer .wp-block-navigation__container { gap: 0.35rem; }
+.zapline-newsletter { padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--50) !important; text-align: center; }
+.zapline-newsletter .wp-block-buttons { justify-content: center; }
+.zapline-eyebrow { font-size: var(--wp--preset--font-size--small); letter-spacing: 0.24em; text-transform: uppercase; color: var(--wp--preset--color--muted); font-weight: 600; }
+.zapline-lede { font-size: var(--wp--preset--font-size--large); color: var(--wp--preset--color--muted); max-width: 36em; }
+.zapline-display { font-size: var(--wp--preset--font-size--display) !important; }
+.zapline-card { background: var(--wp--preset--color--surface); border-radius: 0px; padding: var(--wp--preset--spacing--50); height: 100%; }
+.zapline-footer { padding-top: var(--wp--preset--spacing--60); padding-bottom: var(--wp--preset--spacing--40); background: var(--wp--preset--color--surface); }
+.zapline-footer__bottom { margin-top: var(--wp--preset--spacing--60) !important; padding-top: var(--wp--preset--spacing--40); border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 14%, transparent); font-size: var(--wp--preset--font-size--small); color: var(--wp--preset--color--muted); }
+.zapline-footer__bottom a { color: inherit; }
+.zapline-footer .wp-block-navigation { font-size: var(--wp--preset--font-size--medium); text-transform: none; letter-spacing: 0; font-weight: 400; }
+.zapline-posts .wp-block-post { display: flex; flex-direction: column; gap: 0.6rem; }
+.zapline-posts .wp-block-post-featured-image { margin-bottom: 0.6rem; overflow: hidden; }
+.zapline-posts .wp-block-post-featured-image img { transition: transform .5s ease; }
+.zapline-posts .wp-block-post:hover .wp-block-post-featured-image img { transform: scale(1.03); }
+.zapline-posts .wp-block-post-title { margin: 0; }
+.zapline-meta { gap: 0.5rem 1rem; font-size: var(--wp--preset--font-size--small); color: var(--wp--preset--color--muted); }
+.zapline-testimonial { margin: 0; }
+.zapline-testimonial p { font-family: var(--wp--preset--font-family--montserrat); font-size: var(--wp--preset--font-size--large); line-height: 1.35; }
+.zapline-comments .wp-block-comment-template li { border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 12%, transparent); padding-top: var(--wp--preset--spacing--40); }
+.wp-block-search__input { border-radius: 0px; border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 30%, transparent); background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); padding: 0.7em 1em; }
+.wp-block-post-comments-form input:not([type=submit]):not([type=checkbox]), .wp-block-post-comments-form textarea { border-radius: 0px; border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 30%, transparent); background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
+.wp-block-button.is-style-outline > .wp-block-button__link { background: transparent; color: var(--wp--preset--color--contrast); border-color: currentColor; }
+.wp-block-button.is-style-outline > .wp-block-button__link:hover { background: var(--wp--preset--color--contrast); color: var(--wp--preset--color--base); }
+.wp-block-navigation__responsive-container.is-menu-open { background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Zapline look */
+.zapline-header { border-bottom: 2px solid var(--wp--preset--color--contrast); }
+.zapline-marquee { overflow: hidden; white-space: nowrap; background: var(--wp--preset--color--accent); color: var(--wp--preset--color--accent-contrast); font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; padding: 0.7rem 0 !important; margin: 0 !important; }
+.zapline-marquee { margin-top: calc(-1 * var(--wp--preset--spacing--40)) !important; margin-bottom: var(--wp--preset--spacing--60) !important; }
+.zapline-marquee p { display: inline-block; margin: 0; animation: zapline-slide 26s linear infinite; }
+@keyframes zapline-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.wp-element-button, .wp-block-button__link { box-shadow: 4px 4px 0 var(--wp--preset--color--contrast); transition: transform .15s ease, box-shadow .15s ease; }
+.wp-element-button:hover, .wp-block-button__link:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--wp--preset--color--secondary); }
+.wp-block-button.is-style-outline > .wp-block-button__link { box-shadow: none; }
+.zapline-hero { text-align: center; }
+.zapline-hero .zapline-eyebrow { color: var(--wp--preset--color--accent); }
+.zapline-hero .wp-block-image img { border: 2px solid var(--wp--preset--color--contrast); }
+.zapline-posts .wp-block-post { border: 2px solid var(--wp--preset--color--contrast); padding: 0 0 1.25rem; }
+.zapline-posts .wp-block-post > *:not(.wp-block-post-featured-image) { padding-left: 1.25rem; padding-right: 1.25rem; }
+.zapline-posts .wp-block-post-featured-image { border-bottom: 2px solid var(--wp--preset--color--contrast); margin-bottom: 0.25rem; }
+.zapline-posts .wp-block-post-title { font-size: var(--wp--preset--font-size--large) !important; }
+.zapline-posts .wp-block-post-terms a { color: var(--wp--preset--color--accent); }
+.zapline-card { border: 2px solid var(--wp--preset--color--contrast); }
+.zapline-newsletter { background: var(--wp--preset--color--accent) !important; color: var(--wp--preset--color--accent-contrast) !important; }
+.zapline-newsletter h2 { color: inherit; }
+.zapline-newsletter .wp-block-button__link { background: var(--wp--preset--color--accent-contrast); color: var(--wp--preset--color--accent); border-color: var(--wp--preset--color--accent-contrast); box-shadow: none; }
+.zapline-footer { border-top: 2px solid var(--wp--preset--color--contrast); background: var(--wp--preset--color--base); }
+.zapline-testimonial p { text-transform: uppercase; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }

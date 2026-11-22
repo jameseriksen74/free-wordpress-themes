@@ -1,0 +1,68 @@
+/*
+Theme Name: Petalpost
+Theme URI: https://github.com/jameseriksen74/free-wordpress-themes/tree/main/petalpost
+Author: Pretty Things Online
+Author URI: https://prettythingsonline.com
+Description: Petalpost is a free block theme from Pretty Things Online. A soft, editorial theme with rose and cream tones, a classic serif and gently rounded cards. It comes with three colour styles, bundled fonts, ready-made patterns for a home page, about page and newsletter, and templates for posts, pages, archives, search and 404. Great for makers, florists, candle and ceramics studios, lifestyle bloggers and small boutiques.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: petalpost
+Tags: blog, portfolio, one-column, grid-layout, wide-blocks, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, style-variations, template-editing, threaded-comments, translation-ready
+
+Petalpost WordPress Theme, (C) 2026 Pretty Things Online.
+Petalpost is distributed under the terms of the GNU GPL.
+*/
+
+/* Accessibility */
+.screen-reader-text { border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; word-wrap: normal !important; }
+:where(a, button, input, select, textarea, summary):focus-visible { outline: 2px solid var(--wp--preset--color--secondary); outline-offset: 3px; }
+
+/* Layout helpers */
+.petalpost-header { padding-top: var(--wp--preset--spacing--40); padding-bottom: var(--wp--preset--spacing--40); border-bottom: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 12%, transparent); }
+.petalpost-main { padding-top: var(--wp--preset--spacing--60); padding-bottom: var(--wp--preset--spacing--70); }
+.petalpost-main--flush { padding-top: 0; }
+.petalpost-section { padding-top: var(--wp--preset--spacing--60); padding-bottom: var(--wp--preset--spacing--60); }
+.petalpost-section + .petalpost-section { padding-top: 0; }
+.petalpost-main--flush > .petalpost-section:first-child { padding-top: var(--wp--preset--spacing--40); }
+.petalpost-footer .wp-block-navigation__container { gap: 0.35rem; }
+.petalpost-newsletter { padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--50) !important; text-align: center; }
+.petalpost-newsletter .wp-block-buttons { justify-content: center; }
+.petalpost-eyebrow { font-size: var(--wp--preset--font-size--small); letter-spacing: 0.24em; text-transform: uppercase; color: var(--wp--preset--color--muted); font-weight: 600; }
+.petalpost-lede { font-size: var(--wp--preset--font-size--large); color: var(--wp--preset--color--muted); max-width: 36em; }
+.petalpost-display { font-size: var(--wp--preset--font-size--display) !important; }
+.petalpost-card { background: var(--wp--preset--color--surface); border-radius: 18px; padding: var(--wp--preset--spacing--50); height: 100%; }
+.petalpost-footer { padding-top: var(--wp--preset--spacing--60); padding-bottom: var(--wp--preset--spacing--40); background: var(--wp--preset--color--surface); }
+.petalpost-footer__bottom { margin-top: var(--wp--preset--spacing--60) !important; padding-top: var(--wp--preset--spacing--40); border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 14%, transparent); font-size: var(--wp--preset--font-size--small); color: var(--wp--preset--color--muted); }
+.petalpost-footer__bottom a { color: inherit; }
+.petalpost-footer .wp-block-navigation { font-size: var(--wp--preset--font-size--medium); text-transform: none; letter-spacing: 0; font-weight: 400; }
+.petalpost-posts .wp-block-post { display: flex; flex-direction: column; gap: 0.6rem; }
+.petalpost-posts .wp-block-post-featured-image { margin-bottom: 0.6rem; overflow: hidden; }
+.petalpost-posts .wp-block-post-featured-image img { transition: transform .5s ease; }
+.petalpost-posts .wp-block-post:hover .wp-block-post-featured-image img { transform: scale(1.03); }
+.petalpost-posts .wp-block-post-title { margin: 0; }
+.petalpost-meta { gap: 0.5rem 1rem; font-size: var(--wp--preset--font-size--small); color: var(--wp--preset--color--muted); }
+.petalpost-testimonial { margin: 0; }
+.petalpost-testimonial p { font-family: var(--wp--preset--font-family--playfairdisplay); font-size: var(--wp--preset--font-size--large); line-height: 1.35; }
+.petalpost-comments .wp-block-comment-template li { border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 12%, transparent); padding-top: var(--wp--preset--spacing--40); }
+.wp-block-search__input { border-radius: 18px; border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 30%, transparent); background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); padding: 0.7em 1em; }
+.wp-block-post-comments-form input:not([type=submit]):not([type=checkbox]), .wp-block-post-comments-form textarea { border-radius: 18px; border: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 30%, transparent); background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
+.wp-block-button.is-style-outline > .wp-block-button__link { background: transparent; color: var(--wp--preset--color--contrast); border-color: currentColor; }
+.wp-block-button.is-style-outline > .wp-block-button__link:hover { background: var(--wp--preset--color--contrast); color: var(--wp--preset--color--base); }
+.wp-block-navigation__responsive-container.is-menu-open { background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Petalpost look */
+.petalpost-header { border-bottom: 0; }
+.petalpost-hero { border-radius: 18px; overflow: hidden; }
+.petalpost-hero .wp-block-cover__inner-container { max-width: var(--wp--style--global--wide-size); }
+.petalpost-hero__card { background: color-mix(in srgb, var(--wp--preset--color--base) 88%, transparent); backdrop-filter: blur(10px); border-radius: 18px; padding: var(--wp--preset--spacing--50) !important; max-width: 560px; color: var(--wp--preset--color--contrast); }
+.petalpost-hero__card h1, .petalpost-hero__card h2 { color: var(--wp--preset--color--contrast); }
+h1 em, h2 em, h3 em { font-style: italic; color: var(--wp--preset--color--accent); }
+.petalpost-posts .wp-block-post { background: var(--wp--preset--color--surface); border-radius: 18px; padding: 0.75rem 0.75rem 1.5rem; }
+.petalpost-posts .wp-block-post > *:not(.wp-block-post-featured-image) { padding-left: 0.75rem; padding-right: 0.75rem; }
+.petalpost-posts .wp-block-post-featured-image { border-radius: calc(18px - 6px); }
+.petalpost-newsletter { border-radius: 18px; }
